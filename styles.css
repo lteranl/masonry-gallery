@@ -7,6 +7,15 @@ body {
 }
 section {
     text-align: center;
+    max-width: 80vw;
+    margin: auto;
+    height: 100vh;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 .masonry-grid {
     display: grid;
@@ -22,24 +31,56 @@ section {
         "box1 box1 box1 box1 box2 box2 box5 box5 box8 box8 box8 box8"
         "box9 box9 box10 box10 box2 box2 box5 box5 box8 box8 box8 box8"
         "box9 box9 box11 box11 box2 box2 box5 box5 box8 box8 box8 box8"
-        "box9 box9 box11 box11 box13 box13 box13 box13 box8 box8 box8 box8"
-        "box9 box9 box11 box11 box13 box13 box13 box13 box8 box8 box8 box8"
-        "box14 box14 box14 box14 box13 box13 box13 box13 box8 box8 box8 box8"
-        "box14 box14 box14 box14 box13 box13 box13 box13 box15 box15 box15 box15";
+        "box9 box9 box11 box11 box12 box12 box12 box12 box8 box8 box8 box8"
+        "box9 box9 box11 box11 box12 box12 box12 box12 box8 box8 box8 box8"
+        "box13 box13 box13 box13 box12 box12 box12 box12 box8 box8 box8 box8"
+        "box13 box13 box13 box13 box12 box12 box12 box12 box14 box14 box14 box14";
+    height: 100%;
 }
 
 .masonry-item {
-    background-color: #b1fcfc;
+    border: 1px solid #b1fcfc;
     border-radius: 5px;
+    overflow: hidden;
+    perspective: 1000px;
 }
 .masonry-item:nth-child(even) {
     background-color: transparent;
     border: 1px solid #abff4f;
     color: #c5c6c7;
 }
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: transform 1.5s ease-in-out;
+}
+.masonry-item:hover .flip-box-inner {
+    transform: rotateY(180deg);
+    transition: transform 1.5s ease-in-out;
+}
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.flip-box-front {
+    background-color: #13315c;
+    color: black;
+}
+.flip-box-back {
+    background-color: #13315c;
+    color: white;
+    transform: rotateY(180deg);
+}
 .box1 {
     grid-area: box1;
 }
+
 .box2 {
     grid-area: box2;
 }
@@ -78,7 +119,4 @@ section {
 }
 .box14 {
     grid-area: box14;
-}
-.box15 {
-    grid-area: box15;
 }
