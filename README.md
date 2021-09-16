@@ -6,7 +6,11 @@ In this exercise I'm building a complex masonry grid using CSS Grid Layout. Exam
 
 Example
 
-![Image of masonry gallery layout](images/layout.png)
+![Image of Masonry Gallery layout](images/layout.png)
+
+Finished
+
+![Giphy of Masonry Gallery](https://media.giphy.com/media/RTbJDLZuluioNGNEjG/giphy.gif?cid=790b761101e386d48107d03cd13b6af210eeb3dabac546da&rid=giphy.gif&ct=g)
 
 Things to Keep in Mind Before We Start:
 
