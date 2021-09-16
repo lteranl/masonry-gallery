@@ -39,13 +39,15 @@ img {
 }
 
 .masonry-item {
-    border: 1px solid #b1fcfc;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 7px -7px 6px #0b0c10, -7px 7px 6px #586184;
     overflow: hidden;
     perspective: 1000px;
 }
 .masonry-item:nth-child(even) {
     background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 7px -7px 6px #0b0c10, -7px 7px 6px #d7d3d3;
     border: 1px solid #abff4f;
     color: #c5c6c7;
 }
@@ -57,9 +59,13 @@ img {
     transform-style: preserve-3d;
     transition: transform 1.5s ease-in-out;
 }
+.masonry-item:hover {
+    box-shadow: 7px -7px 6px #0b0c10, -7px 7px 6px #00adb5;
+}
 .masonry-item:hover .flip-box-inner {
     transform: rotateY(180deg);
     transition: transform 1.5s ease-in-out;
+    box-shadow: 7px -7px 6px #0b0c10, -7px 7px 6px #00adb5;
 }
 .flip-box-front,
 .flip-box-back {
