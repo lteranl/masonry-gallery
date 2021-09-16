@@ -9,7 +9,7 @@ section {
     text-align: center;
     max-width: 80vw;
     margin: auto;
-    height: 100vh;
+    height: 90vh;
 }
 img {
     width: 100%;
@@ -21,7 +21,7 @@ img {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    gap: 10px;
+    gap: 20px;
     grid-template-areas:
         "box1 box1 box1 box1 box2 box2 box3 box3 box4 box4 box4 box4"
         "box1 box1 box1 box1 box2 box2 box3 box3 box4 box4 box4 box4"
