@@ -10,7 +10,8 @@ section {
     text-align: center;
     max-width: 80vw;
     margin: auto;
-    height: 90vh;
+    height: 100vh;
+    max-height: 850px;
     margin-bottom: 20px;
 }
 section h2 {
@@ -49,14 +50,12 @@ img {
 
 .masonry-item {
     border-radius: 8px;
-    box-shadow: 7px -7px 6px #0b0c10, -7px 7px 6px #586184;
     overflow: hidden;
     perspective: 1000px;
 }
 .masonry-item:nth-child(even) {
     background-color: transparent;
     border-radius: 8px;
-    box-shadow: 7px -7px 6px #0b0c10, -7px 7px 6px #d7d3d3;
 }
 .flip-box-inner {
     position: relative;
