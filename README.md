@@ -2,7 +2,7 @@
 
 # Website
 
-https://jjesusteran-mori.github.io/masonry-gallery/
+https://lteranl.github.io/masonry-gallery/
 
 Exercise:
 
